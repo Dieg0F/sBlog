@@ -1,0 +1,41 @@
+[
+    {
+        "users": [
+            {
+                "id": 1,
+                "first_name": "Kassandra",
+                "last_name": "Chadderton",
+                "email": "kchadderton0@dedecms.com",
+                "password": "kchadderton0@redcross.org"
+            },
+            {
+                "id": 2,
+                "first_name": "Bradan",
+                "last_name": "Pietesch",
+                "email": "bpietesch1@blinklist.com",
+                "password": "bpietesch1@hp.com"
+            },
+            {
+                "id": 3,
+                "first_name": "Yulma",
+                "last_name": "Causby",
+                "email": "ycausby2@vk.com",
+                "password": "ycausby2@weebly.com"
+            },
+            {
+                "id": 4,
+                "first_name": "Liz",
+                "last_name": "Frampton",
+                "email": "lframpton3@hatena.ne.jp",
+                "password": "lframpton3@prnewswire.com"
+            },
+            {
+                "id": 5,
+                "first_name": "Ase",
+                "last_name": "Heller",
+                "email": "aheller4@1und1.de",
+                "password": "aheller4@youtu.be"
+            }
+        ]
+    }
+]

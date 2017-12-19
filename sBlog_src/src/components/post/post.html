@@ -1,0 +1,32 @@
+<ion-card>
+
+  <ion-item>
+    <ion-avatar item-start class="post_user_avatar">
+      <img [src]="user?.profile_photo_url">
+    </ion-avatar>
+    <h2>{{user?.name}}</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+
+  <img *ngIf="post.image_url" [src]="post?.image_url">
+
+  <ion-card-content>
+    <p>{{post?.description}}</p>
+  </ion-card-content>
+
+  <ion-row>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="thumbs-up"></ion-icon>
+        <div>{{post?.likes_count}} Likes</div>
+      </button>
+    </ion-col>
+    <ion-col>
+      <button ion-button icon-left clear small>
+        <ion-icon name="text"></ion-icon>
+        <div>{{post?.likes_count}} Comments</div>
+      </button>
+    </ion-col>
+  </ion-row>
+
+</ion-card>

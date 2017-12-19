@@ -14,76 +14,78 @@
 // automatically applied to the <body> element in the app.
 ///Statusbar
 .statusbar {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 ///Header
 .header.header-md .toolbar.toolbar-md,
 .header.header-ios .toolbar.toolbar-ios {
-  padding: 0px !important;
+    padding: 0px !important;
 }
 
 .header .toolbar-md,
 .header .toolbar-content-md {
-  height: 45px !important;
+    height: 45px !important;
 }
 
 .header .button-ios {
-  height: 30px;
-  margin: 20px 15px 0;
-  padding: 0 10px;  
+    height: 30px;
+    margin: 20px 15px 0;
+    padding: 0 10px;
 }
 
 .header .button-ios:focus,
-.header .button-md:focus{  
-  outline: none;
+.header .button-md:focus {
+    outline: none;
 }
+
 .header .button-md {
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 0 10px;  
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0 10px;
 }
 
 .header .title.title-md,
 .header .title.title-ios {
-  display: inline-block !important;
-  line-height: 45px !important;
+    display: inline-block !important;
+    line-height: 45px !important;
 }
 
 ///Content Cards
 .scroll-content .card.card-ios,
 .scroll-content .card.card-md {
-  margin: 15px 0 !important;
-  width: 100% !important;
-  border: none !important;
-  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    margin: 15px 0 !important;
+    width: 100% !important;
+    border: none !important;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
 }
 
 //// Footer
 .footer.footer-ios .item-ios.item-block .item-inner,
 .footer.footer-md .item-md.item-block .item-inner {
-  padding: 0px !important;
-  border: none !important;
+    padding: 0px !important;
+    border: none !important;
 }
 
 .footer.footer-ios .item-ios,
 .footer.footer-md .item-md {
-  padding: 0px !important;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.12), 0 -1px 3px rgba(0, 0, 0, 0.15);
+    padding: 0px !important;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.12), 0 -1px 3px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255,255,255,0.2) !important;
 }
 
 .footer.footer-md::before {
-  background-image: none !important;
+    background-image: none !important;
 }
 
 .footer.footer-ios .label-ios,
 .footer.footer-md .label-md {
-  margin: 0px !important;
-  padding: 0 15px;
+    margin: 0px !important;
+    padding: 0 15px;
 }
 
 .footer.footer-md .label-md {
-  padding: 10px 15px !important;
+    padding: 10px 15px !important;
 }
 
 .footer.footer-ios .label-ios .grid,
@@ -92,18 +94,18 @@
 .footer.footer-md .label-md .grid,
 .footer.footer-md .label-md .row,
 .footer.footer-md .label-md .col {
-  padding: 0px !important;
+    padding: 0px !important;
 }
 
 .footer.footer-ios .button-ios,
 .footer.footer-md .button-md {
-  margin: 0px !important;
-  border: none !important;
-  background-color: transparent !important;
-  box-shadow: none !important;
+    margin: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
 .footer.footer-ios .button-ios:focus,
 .footer.footer-md .button-md:focus {
-  outline: none !important;
+    outline: none !important;
 }

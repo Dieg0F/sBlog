@@ -2,8 +2,10 @@ import { HomePage } from './../home/home';
 import { NewPostPage } from './../new-post/new-post';
 import { ViewPostPage } from './../view-post/view-post';
 import { UserConfigurationPage } from './../user-configuration/user-configuration';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { User } from './user.modal';
+import { UserService } from './user.service';
 
 /**
  * Generated class for the UserPage page.
@@ -12,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+
 @IonicPage()
 @Component({
   selector: 'page-user',
@@ -19,34 +22,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UserPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @Input() user_id: number
+  @Input() user: User
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  private userService: UserService) {
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad UserPage');
+  ngOnInit() {
+    this.getUser(this.user)
+  }
+  
+  getUser(u? : User){
+    this.userService.getUserById(49)
+    .subscribe(user => this.user = user)
   }
 
   addPost() {
-    this.navCtrl.setRoot('NewPostPage');
+    this.navCtrl.push('NewPostPage');
     this.navCtrl.pop;
     //this.navCtrl.goToRoot;
   }
 
   viewPost() {
-    this.navCtrl.setRoot('ViewPostPage');
+    this.navCtrl.push('ViewPostPage');
     this.navCtrl.goToRoot;
   }
 
   userConfigs() {
-    this.navCtrl.setRoot('UserConfigurationPage');
+    this.navCtrl.push('UserConfigurationPage');
     this.navCtrl.goToRoot;
   }
-
-  backPage() {
-    this.navCtrl.setRoot('HomePage');
-    this.navCtrl.pop
-  }
-
-
-
 }

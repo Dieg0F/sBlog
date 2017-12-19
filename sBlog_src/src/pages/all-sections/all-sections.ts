@@ -21,9 +21,4 @@ export class AllSectionsPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AllSectionsPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('SectionsListPage');
-    this.navCtrl.pop
-  }
 }

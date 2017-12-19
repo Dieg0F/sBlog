@@ -22,10 +22,4 @@ export class AddSectionPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddSectionPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('SectionsListPage');
-    this.navCtrl.pop
-  }
-
 }

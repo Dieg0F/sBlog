@@ -21,10 +21,4 @@ export class ViewPostPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ViewPostPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('UserPage');
-    this.navCtrl.pop
-  }
-
 }

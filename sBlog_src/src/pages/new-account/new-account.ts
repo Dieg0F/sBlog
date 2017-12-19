@@ -22,11 +22,4 @@ export class NewAccountPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad NewAccountPage');
   }
-
-  loginForm()
-  {
-    this.navCtrl.setRoot('LoginPage');
-    this.navCtrl.goToRoot;
-  }
-
 }

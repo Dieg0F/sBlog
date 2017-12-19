@@ -21,9 +21,4 @@ export class RemoveSectionPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad RemoveSectionPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('SectionsListPage');
-    this.navCtrl.pop
-  }
 }

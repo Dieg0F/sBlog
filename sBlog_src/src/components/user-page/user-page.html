@@ -1,0 +1,18 @@
+<ion-card>
+  <div class="cover_photo">
+    <img [src]="user?.profile_cover_url" />
+  </div>
+  <ion-item>
+    <ion-avatar item-start>
+      <img [src]="user?.profile_photo_url">
+    </ion-avatar>
+  </ion-item>
+  <ion-card-content>
+    <div class="user_info">
+      <ion-card-title>
+        <h2>{{user?.name}}</h2>
+      </ion-card-title>
+      <p>{{user?.bio}}</p>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -23,19 +23,8 @@ export class ConfigurationPage {
     console.log('ionViewDidLoad ConfigurationPage');
   }
 
-
-  comeBack()
-  {
-    this.navCtrl.setRoot('HomePage');
-    this.navCtrl.goToRoot;
-  }
-
   logoff()
   {
-    this.navCtrl.setRoot('LoginPage');
-    /// Make all code here
-    this.navCtrl.goToRoot;
+    this.navCtrl.push('LoginPage');
   }
-
-
 }

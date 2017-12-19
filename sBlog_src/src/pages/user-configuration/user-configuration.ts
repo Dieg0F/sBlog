@@ -22,10 +22,4 @@ export class UserConfigurationPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad UserConfigurationPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('UserPage');
-    this.navCtrl.pop
-  }
-
 }

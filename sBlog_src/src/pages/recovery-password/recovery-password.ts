@@ -23,10 +23,4 @@ export class RecoveryPasswordPage {
     console.log('ionViewDidLoad RecoveryPasswordPage');
   }
 
-  loginForm()
-  {
-    this.navCtrl.setRoot('LoginPage');
-    this.navCtrl.goToRoot;
-  }
-
 }

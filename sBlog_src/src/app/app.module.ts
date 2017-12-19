@@ -5,6 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 //import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MyApp } from './app.component';
+import { UserService } from '../pages/user/user.service';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,7 @@ import { MyApp } from './app.component';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -21,18 +24,10 @@ import { MyApp } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserService
   ]
 })
 export class AppModule {
 
-}
-
-export const firebaseConfig = {
-  apiKey: "AIzaSyAR06bI2wjQHuFTd1MThQ_CoD3D_44ULeM",
-  authDomain: "sblog-9a149.firebaseapp.com",
-  databaseURL: "https://sblog-9a149.firebaseio.com",
-  projectId: "sblog-9a149",
-  storageBucket: "sblog-9a149.appspot.com",
-  messagingSenderId: "706344072159"
 }

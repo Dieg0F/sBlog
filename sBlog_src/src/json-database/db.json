@@ -1,41 +1,156 @@
-[
-    {
-        "users": [
-            {
-                "id": 1,
-                "first_name": "Kassandra",
-                "last_name": "Chadderton",
-                "email": "kchadderton0@dedecms.com",
-                "password": "kchadderton0@redcross.org"
-            },
-            {
-                "id": 2,
-                "first_name": "Bradan",
-                "last_name": "Pietesch",
-                "email": "bpietesch1@blinklist.com",
-                "password": "bpietesch1@hp.com"
-            },
-            {
-                "id": 3,
-                "first_name": "Yulma",
-                "last_name": "Causby",
-                "email": "ycausby2@vk.com",
-                "password": "ycausby2@weebly.com"
-            },
-            {
-                "id": 4,
-                "first_name": "Liz",
-                "last_name": "Frampton",
-                "email": "lframpton3@hatena.ne.jp",
-                "password": "lframpton3@prnewswire.com"
-            },
-            {
-                "id": 5,
-                "first_name": "Ase",
-                "last_name": "Heller",
-                "email": "aheller4@1und1.de",
-                "password": "aheller4@youtu.be"
-            }
-        ]
-    }
-]
+{
+    "users": [
+        {
+            "id": 49,
+            "name": "nascetur ridiculus",
+            "age": 1,
+            "email": "fchrichton0@reuters.com",
+            "adress": "justo eu massa",
+            "profile_photo_url": "https://static.pexels.com/photos/415829/pexels-photo-415829.jpeg",
+            "profile_cover_url": "https://images.pexels.com/photos/416676/pexels-photo-416676.jpeg?h=750&auto=compress&cs=tinysrgb",
+            "bio": "suspendisse potenti nullam",
+            "posts_id": [
+                {"id": 9}
+            ]
+        },
+        {
+            "id": 52,
+            "name": "orci mauris lacinia",
+            "age": 11,
+            "email": "fsilvester1@sciencedaily.com",
+            "adress": "sit amet lobortis sapien sapien",
+            "profile_photo_url": "https://images.pexels.com/photos/262391/pexels-photo-262391.jpeg?h=350&auto=compress&cs=tinysrgb",
+            "profile_cover_url": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?h=750&auto=compress&cs=tinysrgb",
+            "bio": "in hac habitasse platea",
+            "posts_id": [
+                {"id": 7},
+                {"id": 8}
+            ]
+        },
+        {
+            "id": 77,
+            "name": "metus sapien ut",
+            "age": 9,
+            "email": "vhaughin2@abc.net.au",
+            "adress": "elementum nullam varius nulla facilisi",
+            "profile_photo_url": "https://images.pexels.com/photos/287240/pexels-photo-287240.jpeg?h=350&auto=compress&cs=tinysrgb",
+            "profile_cover_url": "https://images.pexels.com/photos/32237/pexels-photo.jpg?w=1260&h=750&auto=compress&cs=tinysrgb",
+            "bio": "ultrices posuere cubilia curae duis faucibus",
+            "posts_id": [
+                {"id": 10}
+            ]
+        },
+        {
+            "id": 100,
+            "name": "convallis duis consequat",
+            "age": 3,
+            "email": "tliversage3@amazonaws.com",
+            "adress": "ante ipsum primis",
+            "profile_photo_url": "https://images.pexels.com/photos/9687/pexels-photo.jpg?h=350&auto=compress&cs=tinysrgb",
+            "profile_cover_url": "https://images.pexels.com/photos/127753/pexels-photo-127753.jpeg?h=750&auto=compress&cs=tinysrgb",
+            "bio": "sed justo pellentesque",
+            "posts_id": [
+                {"id": 4},
+                {"id": 5},
+                {"id": 6}
+            ]
+        },
+        {
+            "id": 94,
+            "name": "mauris lacinia",
+            "age": 13,
+            "email": "sbiddy4@cbc.ca",
+            "adress": "nec nisi vulputate nonummy",
+            "profile_photo_url": "https://static.pexels.com/photos/618669/pexels-photo-618669.jpeg",
+            "profile_cover_url": "https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?h=750&auto=compress&cs=tinysrgb",
+            "bio": "nascetur ridiculus mus",
+            "posts_id": [
+                {"id": 1},
+                {"id": 2},
+                {"id": 3}
+            ]
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "user_id": 94,
+            "title": "lectus pellentesque at",
+            "description": "adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis in",
+            "likes_count": 325,
+            "image_url": "https://static.pexels.com/photos/7640/pexels-photo.jpg"
+        },
+        {
+            "id": 2,
+            "user_id": 94,
+            "title": "pede morbi porttitor",
+            "description": "nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu",
+            "likes_count": 187,
+            "image_url": ""
+        },
+        {
+            "id": 3,
+            "user_id": 94,
+            "title": "eget semper",
+            "description": "eget nunc donec quis orci eget orci vehicula",
+            "likes_count": 227,
+            "image_url": ""
+        },
+        {
+            "id": 4,
+            "user_id": 100,
+            "title": "morbi non lectus",
+            "description": "duis consequat dui nec nisi",
+            "likes_count": 486,
+            "image_url": "https://static.pexels.com/photos/395242/pexels-photo-395242.jpeg"
+        },
+        {
+            "id": 5,
+            "user_id": 100,
+            "title": "id turpis",
+            "description": "in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida nisi at nibh",
+            "likes_count": 172,
+            "image_url": "https://static.pexels.com/photos/241456/pexels-photo-241456.jpeg"
+        },
+        {
+            "id": 6,
+            "user_id": 100,
+            "title": "nullam molestie nibh",
+            "description": "vel dapibus at diam nam tristique tortor eu",
+            "likes_count": 441,
+            "image_url": ""
+        },
+        {
+            "id": 7,
+            "user_id": 52,
+            "title": "id nulla",
+            "description": "libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu",
+            "likes_count": 409,
+            "image_url": ""
+        },
+        {
+            "id": 8,
+            "user_id": 52,
+            "title": "consequat morbi a",
+            "description": "lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum",
+            "likes_count": 340,
+            "image_url": ""
+        },
+        {
+            "id": 9,
+            "user_id": 49,
+            "title": "lacinia nisi venenatis",
+            "description": "donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+            "likes_count": 104,
+            "image_url": ""
+        },
+        {
+            "id": 10,
+            "user_id": 77,
+            "title": "metus vitae",
+            "description": "curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo",
+            "likes_count": 447,
+            "image_url": "https://static.pexels.com/photos/287240/pexels-photo-287240.jpeg"
+        }
+    ]
+}

@@ -29,19 +29,19 @@ export class LoginPage {
 
   loginApp()
   {
-    this.navCtrl.setRoot('HomePage');
+    this.navCtrl.push('HomePage');
     this.navCtrl.goToRoot;
   }
 
   newAccountRedirect()
   {
-    this.navCtrl.setRoot('NewAccountPage');
+    this.navCtrl.push('NewAccountPage');
     this.navCtrl.goToRoot;
   }
 
   recoveryPasswordRedirect()
   {
-    this.navCtrl.setRoot('RecoveryPasswordPage');
+    this.navCtrl.push('RecoveryPasswordPage');
     this.navCtrl.goToRoot;
   }
 }

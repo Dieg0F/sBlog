@@ -24,12 +24,7 @@ export class ViewSectionPage {
   }
 
   viewTopic() {
-    this.navCtrl.setRoot('TopicFeedPage');
+    this.navCtrl.push('TopicFeedPage');
     this.navCtrl.goToRoot;
-  }
-
-  backPage() {
-    this.navCtrl.setRoot('SectionsListPage');
-    this.navCtrl.pop
   }
 }

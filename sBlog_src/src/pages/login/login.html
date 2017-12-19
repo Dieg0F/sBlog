@@ -1,13 +1,10 @@
-<!--
-  Generated template for the LoginPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-content padding>
-  <div>
-    <div>
-      <ion-list>
+  <div class="content_login">
+    <div class="sblog_logo">
+      <img src="assets/imgs/sblog-logo.png" alt="sBlog - Share Your Experiences">
+    </div>
+    <form>
+      <div class="content_form_body">
         <ion-item>
           <ion-label floating>Username</ion-label>
           <ion-input type="text"></ion-input>
@@ -16,24 +13,24 @@
           <ion-label floating>Password</ion-label>
           <ion-input type="password"></ion-input>
         </ion-item>
-      </ion-list>
-    </div>
-    <div>
-      <button ion-button full (click)="loginApp()">Entrar</button>
-    </div>
+        <div>
+          <button ion-button full (click)="loginApp()">Entrar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="external_links">
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col text-center>
+            <button ion-button color="light" clear (click)="newAccountRedirect()">Nova Conta</button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button color="light" clear (click)="recoveryPasswordRedirect()">Recuperar Senha</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
   </div>
 </ion-content>
-<ion-footer>
-  <ion-item>
-    <ion-grid>
-      <ion-row>
-        <ion-col text-center>
-          <button ion-button color="secondary" clear (click)="newAccountRedirect()">Nova Conta</button>
-        </ion-col>
-        <ion-col text-center>
-          <button ion-button color="dark" clear (click)="recoveryPasswordRedirect()">Recuperar Senha</button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-item>
-</ion-footer>

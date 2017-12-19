@@ -1,0 +1,10 @@
+<ion-list>
+  <ion-item>
+    <ion-thumbnail item-start>
+      <img [src]="user?.profile_photo_url">
+    </ion-thumbnail>
+    <h2>{{user?.name}}</h2>
+    <p>{{user?.bio}}</p>
+    <button ion-button clear item-end (click)="opemModal(user)">View</button>
+  </ion-item>
+</ion-list>

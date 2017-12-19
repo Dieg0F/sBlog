@@ -1,0 +1,20 @@
+user-page {
+    
+    ion-item > div.item-inner {
+        display: none!important;
+    }
+
+    ion-avatar {
+        margin: 0px auto!important;
+        padding: 0px!important;
+    }
+
+    .item-ios, .item-md{
+        padding: 0px!important;
+    }
+
+    .user_info{
+        text-align: center;
+        text-transform: capitalize;
+    }
+}

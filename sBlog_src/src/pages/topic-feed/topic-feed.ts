@@ -22,9 +22,4 @@ export class TopicFeedPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TopicFeedPage');
   }
-
-  backPage() {
-    this.navCtrl.setRoot('ViewSectionPage');
-    this.navCtrl.pop
-  }
 }

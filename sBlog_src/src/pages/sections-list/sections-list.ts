@@ -28,28 +28,22 @@ export class SectionsListPage {
   }
 
   removeSection() {
-    this.navCtrl.setRoot('RemoveSectionPage');
+    this.navCtrl.push('RemoveSectionPage');
     this.navCtrl.goToRoot;
   }
 
   addSection() {
-    this.navCtrl.setRoot('AddSectionPage');
+    this.navCtrl.push('AddSectionPage');
     this.navCtrl.goToRoot;
   }
 
   allSection() {
-    this.navCtrl.setRoot('AllSectionsPage');
+    this.navCtrl.push('AllSectionsPage');
     this.navCtrl.goToRoot;
   }
 
   viewSection() {
-    this.navCtrl.setRoot('ViewSectionPage');
+    this.navCtrl.push('ViewSectionPage');
     this.navCtrl.goToRoot;
   }
-
-  backPage() {
-    this.navCtrl.setRoot('HomePage');
-    this.navCtrl.pop
-  }
-
 }

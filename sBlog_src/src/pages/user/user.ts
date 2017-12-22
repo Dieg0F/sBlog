@@ -49,9 +49,4 @@ export class UserPage {
     this.navCtrl.push('ViewPostPage');
     this.navCtrl.goToRoot;
   }
-
-  userConfigs() {
-    this.navCtrl.push('UserConfigurationPage');
-    this.navCtrl.goToRoot;
-  }
 }

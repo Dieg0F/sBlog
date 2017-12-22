@@ -1,32 +1,53 @@
-<ion-card>
-  
-    <ion-item class="post_header"> 
-      <ion-avatar item-start class="post_user_avatar">
-        <img [src]="user?.profile_photo_url">
-      </ion-avatar>
-      <h2>{{user?.name}}</h2>
-      <p>November 5, 1955</p>
-    </ion-item>
-  
-    <img [src]="post?.image_url">
-  
-    <ion-card-content>
+<div class="content_post">
+  <div class="content_post_header">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>
+          <div class="content_profile_photo mini-thumb">
+            <img [src]="user?.profile_photo_url">
+          </div>
+        </ion-col>
+        <ion-col col-7>
+          <div class="content_user_own_post">
+            <h2>{{user?.name}}</h2>
+            <p>November 5, 1955</p>
+          </div>
+        </ion-col>
+        <ion-col col-2>
+          <div class="content_post_configurations">
+            <img src="assets/svg/ic_more_vert_black_48px.svg" />
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="content_post_midia">
+    <div class="content_midia" *ngIf="post?.image_url">
+      <img [src]="post?.image_url">
+    </div>
+    <div class="content_post_text">
       <p>{{post?.description}}</p>
-    </ion-card-content>
-  
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>{{post?.likes_count}} Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>{{post?.likes_count}} Comments</div>
-        </button>
-      </ion-col>
-    </ion-row>
-  
-  </ion-card>
+    </div>
+  </div>
+  <div class="content_post_action">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <div>
+            <img src="assets/svg/ic_thumb_up_black_48px.svg" />            
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <div>
+            <img src="assets/svg/ic_comment_black_48px.svg" />
+          </div>
+        </ion-col>
+        <ion-col col-4>
+          <div>
+            <img src="assets/svg/ic_share_black_48px.svg" />
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>

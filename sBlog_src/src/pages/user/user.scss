@@ -1,23 +1,101 @@
 page-user {
-    ion-card {
-        position: relative;
-        text-align: center;
-      }
-    
-      .card-title {
-        position: absolute;
-        top: 36%;
-        font-size: 2.0em;
+    .content-md,
+    .content-ios {
+        background-color: #f9f9f9 !important;
+    }
+    .content_ {
         width: 100%;
-        font-weight: bold;
-        color: #000;
-      }
-    
-      .card-subtitle {
-        font-size: 1.0em;
+        display: block;
+        margin-bottom: 125px;
+        .cover_photo {
+            width: 100%;
+            height: 300px;
+            margin-top: -16px !important;
+            z-index: 1;
+            -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            img {
+                min-height: 300px;
+                min-width: 300px;
+                position: absolute;
+            }
+        }
+    }
+    .content_info {
+        z-index: 9999;
         position: absolute;
-        top: 52%;
-        width: 100%;
-        color: #000;
-      }
+        width: 100% !important;
+        margin-top: -50px;
+        .content_profile_name {
+            margin: 0 15px !important;
+            background-color: #fff;
+            -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            padding: 45px 0 15px !important;
+            margin-top: -15px;
+            border-radius: 2px;
+            
+            h2 {
+                margin: 15px 0px 0px !important;
+                font-size: 18px !important;
+                color: #333;
+            }
+            p {
+                margin: 0 !important;
+                color: #777;
+                font-size: 15px !important;
+            }
+        }
+        .content_profile_photo {
+            width: 150px;
+            margin: 0px auto 0;
+            img {
+                width: 150px;
+                height: 150px;
+                border-radius: 100%;
+                position: absolute;
+                margin-top: -100px;
+                -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+                -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+                box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+            }
+        }
+    }    
+
+    .add_post_float{
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        position: fixed;
+        bottom: 2.5% !important;
+        right: 7.5% !important;
+        z-index: 9999;        
+
+        button{
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background: rgba(45,202,210,1);
+            background: -moz-radial-gradient(center, ellipse cover, rgba(45,202,210,1) 0%, rgba(0,103,158,1) 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(45,202,210,1)), color-stop(100%, rgba(0,103,158,1)));
+            background: -webkit-radial-gradient(center, ellipse cover, rgba(45,202,210,1) 0%, rgba(0,103,158,1) 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgba(45,202,210,1) 0%, rgba(0,103,158,1) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgba(45,202,210,1) 0%, rgba(0,103,158,1) 100%);
+            background: radial-gradient(ellipse at center, rgba(45,202,210,1) 0%, rgba(0,103,158,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dcad2', endColorstr='#00679e', GradientType=1 );  
+            padding: 0px !important;
+            -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+            -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.4);
+
+            img{
+                width: 35px;
+                height: 35px;
+                opacity: 0.7;
+            }
+        }
+    }
 }

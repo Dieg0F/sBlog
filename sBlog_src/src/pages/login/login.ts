@@ -19,7 +19,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, private statusBar: StatusBar) {
 
-      //this.statusBar.styleBlackTranslucent();
+      statusBar.backgroundColorByHexString('000000');
       this.statusBar.styleLightContent();
   }
 
@@ -30,18 +30,15 @@ export class LoginPage {
   loginApp()
   {
     this.navCtrl.push('HomePage');
-    this.navCtrl.goToRoot;
   }
 
   newAccountRedirect()
   {
     this.navCtrl.push('NewAccountPage');
-    this.navCtrl.goToRoot;
   }
 
   recoveryPasswordRedirect()
   {
     this.navCtrl.push('RecoveryPasswordPage');
-    this.navCtrl.goToRoot;
   }
 }

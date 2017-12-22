@@ -27,4 +27,9 @@ export class ConfigurationPage {
   {
     this.navCtrl.push('LoginPage');
   }
+
+  userConfigs() {
+    this.navCtrl.push('UserConfigurationPage');
+    this.navCtrl.goToRoot;
+  }
 }

@@ -8,6 +8,7 @@ import { NavController, IonicPage, NavParams } from 'ionic-angular';
 import { Tabs } from 'ionic-angular/components/tabs/tabs';
 import { UserService } from '../user/user.service';
 import { Post } from '../../components/post/post.modal';
+import { StatusBar } from '@ionic-native/status-bar';
 
 @IonicPage()
 @Component({
@@ -19,7 +20,10 @@ export class HomePage implements OnInit {
   @Input() posts: Post[] = []
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-    private userService: UserService) {
+    private userService: UserService, private statusBar: StatusBar) {
+
+      this.statusBar.backgroundColorByHexString('00679e');
+      this.statusBar.styleLightContent();
 
   }
 

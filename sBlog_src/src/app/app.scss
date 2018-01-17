@@ -110,7 +110,7 @@
 .header .button-md:focus,
 .header .button-ios:active,
 .header .button-md:active,
-.header .bar-button-md-default.bar-button-default-md.bar-button-clear-md-default:active{
+.header .bar-button-md-default.bar-button-default-md.bar-button-clear-md-default:active {
     outline: none !important;
     border: none !important;
 }
@@ -164,7 +164,7 @@
 }
 
 ///Fixes
-button:focus{
+button:focus {
     outline: none !important;
 }
 
@@ -182,12 +182,20 @@ button:focus{
         padding: 0px !important;
     }
 }
+
+page-home {
+    .content_post {
+        margin: 15px 0 !important;
+    }
+}
+
 .content_post_header {
-    padding: 10px;
+    padding: 10px 15px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .content_profile_photo.mini-thumb {
     width: 100%;
     text-align: center;
@@ -200,6 +208,7 @@ button:focus{
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
     }
 }
+
 .content_user_own_post {
     h2 {
         margin: 5px 0px 0px !important;
@@ -212,14 +221,11 @@ button:focus{
         font-size: 15px !important;
     }
 }
+
 .content_post_configurations {
     text-align: center !important;
-    padding-top: 7.5px;
-    img {
-        width: 30px;
-        height: 30px;
-    }
 }
+
 .content_post_text {
     padding: 15px 10px;
     text-align: justify;
@@ -227,15 +233,44 @@ button:focus{
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     border-left: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .content_post_action {
-    padding: 15px 10px;
+    padding: 15px 15px 0;
     text-align: center !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     border-right: 1px solid rgba(0, 0, 0, 0.05);
     border-left: 1px solid rgba(0, 0, 0, 0.05);
-    img {
-        width: 30px;
-        height: 30px;
+}
+
+.content_post_action,
+.content_post_configurations {
+    .button.button-md,
+    .button.button-ios {
+        width: 100%;
+        height: 50px;
+        margin: 0px !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+        ion-icon {
+            font-size: 30px !important;
+            color: #444 !important;
+        }
+        .button-effect {
+            background-color: rgba(0, 0, 0, 0.50);
+        }
+    }
+}
+
+.content_post_configurations {
+    .button.button-md,
+    .button.button-ios {
+        height: 66px !important;
+        padding: 0px !important;
+        margin-top: -10px !important;
+        ion-icon {
+            margin-top: 0px;
+            margin-left: 2px;
+        }
     }
 }
 
@@ -249,22 +284,87 @@ ion-icon {
         height: 1em;
         font-size: 100px;
     }
-    // &[class*="icon_config"] {
-    //     mask-image: url(assets/svg/ic_thumb_up_black_48px.svg);
-    // }
-    // &[class*="icon_config_post"] {
-    //     mask-image: url(assets/svg/ic_thumb_up_black_48px.svg);
-    // }
-    // &[class*="icon_check"] {
-    //     mask-image: url(assets/svg/ic_thumb_up_black_48px.svg);
-    // }
-    // &[class*="icon_comments"] {
-    //     mask-image: url(assets/svg/ic_comment_black_48px.svg);
-    // }
-    // &[class*="icon_share"] {
-    //     mask-image: url(assets/svg/ic_share_black_48px.svg);
-    // }
-    &[class*="icon-a"] {
-        mask-image: url(assets/svg/ic_add_circle_outline_black_48px.svg);
+}
+
+page-login,
+page-recovery-password,
+page-new-account {
+    .content.content-ios,
+    .content.content-md {
+        background: rgba(0, 103, 158, 1);
+        background: -moz-linear-gradient(-45deg, rgba(0, 103, 158, 1) 0%, rgba(45, 202, 210, 1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0, 103, 158, 1)), color-stop(100%, rgba(45, 202, 210, 1)));
+        background: -webkit-linear-gradient(-45deg, rgba(0, 103, 158, 1) 0%, rgba(45, 202, 210, 1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(0, 103, 158, 1) 0%, rgba(45, 202, 210, 1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(0, 103, 158, 1) 0%, rgba(45, 202, 210, 1) 100%);
+        background: linear-gradient(135deg, rgba(0, 103, 158, 1) 0%, rgba(45, 202, 210, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00679e', endColorstr='#2dcad2', GradientType=1);
+    }
+    .content_login {
+        border-radius: 5px;
+        background: #fff;
+        margin-top: 35px;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+    }
+    .sblog_logo {
+        max-height: 210px;
+        text-align: center;
+        padding: 15px;
+        img {
+            width: auto;
+            height: 210px;
+        }
+    }
+    .content_form_body {
+        .item-ios,
+        .item-md {
+            padding: 0 25px !important;
+        }
+        .button-full {
+            margin: 25px 0 0;
+        }
+        .button-ios,
+        .button-md {
+            background: rgba(45, 202, 210, 1);
+            background: -moz-linear-gradient(top, rgba(45, 202, 210, 1) 0%, rgba(45, 202, 210, 1) 1%, rgba(31, 174, 217, 1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(45, 202, 210, 1)), color-stop(1%, rgba(45, 202, 210, 1)), color-stop(100%, rgba(31, 174, 217, 1)));
+            background: -webkit-linear-gradient(top, rgba(45, 202, 210, 1) 0%, rgba(45, 202, 210, 1) 1%, rgba(31, 174, 217, 1) 100%);
+            background: -o-linear-gradient(top, rgba(45, 202, 210, 1) 0%, rgba(45, 202, 210, 1) 1%, rgba(31, 174, 217, 1) 100%);
+            background: -ms-linear-gradient(top, rgba(45, 202, 210, 1) 0%, rgba(45, 202, 210, 1) 1%, rgba(31, 174, 217, 1) 100%);
+            background: linear-gradient(to bottom, rgba(45, 202, 210, 1) 0%, rgba(45, 202, 210, 1) 1%, rgba(31, 174, 217, 1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2dcad2', endColorstr='#1faed9', GradientType=0);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 50px
+        }
+    }
+    .external_links .item-ios,
+    .external_links .item-md {
+        background: transparent !important;
+    }
+    .external_links .item-ios.item-block .item-inner,
+    .external_links .item-md.item-block .item-inner {
+        border: none !important;
+    } ///Global Pages CSS
+    .content_page_title {
+        padding: 25px 25px 10px;
+        h2 {
+            color: #1faed9;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            margin: 0 !important;
+            line-height: 40px;
+        }
+        span {
+            color: #444;
+            font-size: 22px;
+            font-weight: lighter;
+            text-align: left;
+            line-height: 20px !important;
+        }
+    }
+    .content_page_title>h2.medium {
+        font-size: 25px !important;
     }
 }

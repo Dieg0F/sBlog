@@ -9,4 +9,5 @@ export class User{
     profile_cover_url: string
     bio: string
     posts_id: number[]
+    sections_id: number[]
 }

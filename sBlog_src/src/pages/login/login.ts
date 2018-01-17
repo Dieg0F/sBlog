@@ -19,7 +19,7 @@ export class LoginPage {
   constructor(public navCtrl: NavController, 
     public navParams: NavParams, private statusBar: StatusBar) {
 
-      statusBar.backgroundColorByHexString('000000');
+      this.statusBar.backgroundColorByHexString('00679e');
       this.statusBar.styleLightContent();
   }
 

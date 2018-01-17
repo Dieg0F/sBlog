@@ -5,14 +5,12 @@
 </ion-header>
 <ion-content>
   <div class="add_post_float">
-    <button ion-button (click)="addPost()">
-      <img src="assets/svg/ic_add_circle_outline_white_48px.svg">
+    <button ion-button (click)="addPost()" icon-only>    
+        <ion-icon name="add"></ion-icon>
     </button>
   </div>
   <user-page-detail [user]="user"></user-page-detail>
   <div *ngFor="let posts_id of user?.posts_id">
     <user-feed [postId]="posts_id.id" [user]="user"></user-feed>
   </div>
-  <a class="btn btn-default">Add Post</a>
-  <a class="btn btn-danger" (click)="viewPost()">View Post</a>
 </ion-content>

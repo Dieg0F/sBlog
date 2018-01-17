@@ -1,4 +1,3 @@
-//import { User } from "../../pages/user/user.modal";
 
 export class Post{
     
@@ -7,5 +6,6 @@ export class Post{
         description: string
         likes_count: number        
         image_url: string
-        
+        section_id: number
+        creation_date: string
     }

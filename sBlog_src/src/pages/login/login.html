@@ -3,7 +3,7 @@
     <div class="sblog_logo">
       <img src="assets/imgs/sblog-logo.png" alt="sBlog - Share Your Experiences">
     </div>
-    <form>
+    <form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
       <div class="content_form_body">
         <ion-item>
           <ion-label floating>Username</ion-label>
@@ -14,7 +14,7 @@
           <ion-input type="password"></ion-input>
         </ion-item>
         <div>
-          <button ion-button full (click)="loginApp()">Entrar</button>
+          <button ion-button full [disabled]="!loginForm.valid">Entrar</button>
         </div>
       </div>
     </form>
@@ -24,10 +24,10 @@
       <ion-grid>
         <ion-row>
           <ion-col text-center>
-            <button ion-button color="light" clear (click)="newAccountRedirect()">Nova Conta</button>
+            <button ion-button color="light" clear (click)="goToSignup()">Nova Conta</button>
           </ion-col>
           <ion-col text-center>
-            <button ion-button color="light" clear (click)="recoveryPasswordRedirect()">Recuperar Senha</button>
+            <button ion-button color="light" clear (click)="goToResetPassword()">Recuperar Senha</button>
           </ion-col>
         </ion-row>
       </ion-grid>

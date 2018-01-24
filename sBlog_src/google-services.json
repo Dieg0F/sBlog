@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "500578678941",
+    "firebase_url": "https://sblog-18f74.firebaseio.com",
+    "project_id": "sblog-18f74",
+    "storage_bucket": "sblog-18f74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500578678941:android:7444711f51446c12",
+        "android_client_info": {
+          "package_name": "com.android.sblog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500578678941-s19ioknrfjkbj8ueods26cg0l8r68dls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhoY4QSMC3sBhMQ-PlvUgt8qPHsk910J4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

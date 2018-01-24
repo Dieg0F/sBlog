@@ -21,10 +21,7 @@ export class HomePage implements OnInit {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
     private userService: UserService, private statusBar: StatusBar) {
-
-      this.statusBar.backgroundColorByHexString('00679e');
       this.statusBar.styleLightContent();
-
   }
 
   ngOnInit() {

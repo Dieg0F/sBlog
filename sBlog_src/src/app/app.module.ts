@@ -3,10 +3,10 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-//import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MyApp } from './app.component';
 import { UserService } from '../pages/user/user.service';
 import { HttpModule } from '@angular/http';
+import { AuthProvider } from '../providers/auth/auth';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UserService
+    UserService,
+    AuthProvider
   ]
 })
 export class AppModule {
